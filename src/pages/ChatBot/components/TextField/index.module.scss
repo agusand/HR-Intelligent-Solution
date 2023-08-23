@@ -1,0 +1,38 @@
+@import "styles/utils/variables.scss";
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  border: 0.1rem solid $secondary-component-color;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 2rem;
+  padding-right: 7rem;
+  width: 100%;
+  outline: none;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

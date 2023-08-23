@@ -1,0 +1,108 @@
+@import "styles/shared/typographies";
+@import "styles/utils/variables";
+
+.container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+
+  &--user {
+    flex-direction: row-reverse;
+  }
+
+  &--bot {
+    flex-direction: row;
+  }
+}
+
+.messageBox {
+  &__container {
+    display: flex;
+    border-radius: 2rem;
+    position: relative;
+    width: 60%;
+
+    &--user {
+      border-top-right-radius: 0;
+      flex-direction: row;
+    }
+
+    &--bot {
+      border-top-left-radius: 0;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__content {
+    background-color: $tertiary-component-color;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    width: 90%;
+
+    @extend %chat-content;
+
+    &--user {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &--bot {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+
+      & .childrenContainer {
+        position: relative;
+        left: -5%;
+      }
+    }
+  }
+
+  &__firstMask {
+    background-color: $tertiary-component-color;
+    width: 5%;
+    height: 100%;
+
+    &--user {
+      border-bottom-right-radius: 2rem;
+    }
+
+    &--bot {
+      border-bottom-left-radius: 2rem;
+    }
+  }
+
+  &__secondMask {
+    background-color: $tertiary-component-color;
+    width: 5%;
+    height: 100%;
+  }
+
+  &__thirdMask {
+    background-color: $secondary-component-color;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+
+    &--user {
+      border-top-left-radius: 3rem;
+      right: 0;
+    }
+
+    &--bot {
+      border-top-right-radius: 3rem;
+      left: 0;
+    }
+  }
+}
+
+.iconContainer {
+  height: $icon-size;
+  width: $icon-size;
+  transform: translateY(-50%);
+
+  & svg {
+    height: 100%;
+    width: 100%;
+  }
+}

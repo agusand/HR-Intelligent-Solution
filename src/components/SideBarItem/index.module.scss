@@ -1,0 +1,26 @@
+@import "styles/utils/variables.scss";
+@import "styles/shared/typographies.scss";
+
+.item {
+  align-items: center;
+  display: flex;
+  border-radius: 1rem;
+  gap: 2rem;
+  list-style: none;
+  padding: 2rem;
+  transition: background 0.3s;
+
+  @extend %side-bar-element;
+
+  &:hover {
+    background-color: $main-component-color60;
+  }
+
+  &--active {
+    background-color: $main-component-color60;
+  }
+}
+
+.link {
+  text-decoration: none;
+}

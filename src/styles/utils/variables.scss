@@ -1,0 +1,25 @@
+// Colors
+
+$main-component-color20: #fff15920;
+$main-component-color40: #fff15940;
+$main-component-color60: #fff15960;
+$main-component-color80: #fff15980;
+$main-component-color: #fff159;
+
+$secondary-component-color: #ececec;
+$tertiary-component-color: #cecece;
+$main-text-color: #000000;
+$secondary-text-color: #3483fa;
+$background-color: #ffffff;
+
+// Sizes
+$bars-padding: 1.6rem;
+$icon-size: 4.8rem;
+$logo-height: 5.2rem;
+$header-height: calc(2 * $bars-padding + $logo-height);
+
+// Fonts
+$font-roboto: "Roboto";
+
+// Misc
+$z-indexes: "loading", "content";

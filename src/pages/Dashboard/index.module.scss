@@ -1,0 +1,130 @@
+@import "styles/shared/typographies.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100%;
+  padding: 6rem 10rem;
+}
+
+.title {
+  @extend %section-title;
+
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.positionsTitle {
+  @extend .title;
+
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s;
+  white-space: nowrap;
+  width: 100%;
+
+  &--collapsed {
+    width: calc((100% - 6%) / 3);
+  }
+}
+
+.usersTitle {
+  @extend .title;
+
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s;
+  visibility: hidden;
+  white-space: nowrap;
+  width: 0;
+
+  &--visible {
+    visibility: visible;
+    width: calc((100% - 6%) * 2 / 3);
+  }
+
+  &--collapsed {
+    width: calc((100% - 6%) / 3);
+  }
+}
+
+.indicatorsTitle {
+  @extend .title;
+
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s;
+  visibility: hidden;
+  white-space: nowrap;
+  width: 0;
+
+  &--visible {
+    visibility: visible;
+    width: calc((100% - 6%) / 3);
+  }
+}
+
+.titlesGrid {
+  display: flex;
+  gap: 3%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  gap: 3%;
+  height: 100%;
+  width: 100%;
+}
+
+.positionsContainer {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s;
+  white-space: nowrap;
+  width: 100%;
+
+  &--collapsed {
+    width: calc((100% - 6%) / 3);
+  }
+}
+
+.usersContainer {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s;
+  visibility: hidden;
+  white-space: nowrap;
+  width: 0;
+
+  &--visible {
+    visibility: visible;
+    width: calc((100% - 6%) * 2 / 3);
+  }
+
+  &--collapsed {
+    width: calc((100% - 6%) / 3);
+  }
+}
+
+.indicatorsContainer {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s;
+  visibility: hidden;
+  white-space: nowrap;
+  width: 0;
+
+  &--visible {
+    visibility: visible;
+    width: calc((100% - 6%) / 3);
+  }
+}
+
+.searchBarContainer {
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}

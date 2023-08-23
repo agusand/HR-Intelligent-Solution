@@ -1,0 +1,53 @@
+@import "styles/utils/variables.scss";
+@import "styles/shared/typographies.scss";
+
+.container {
+  align-items: center;
+  background-color: $main-component-color;
+  color: $main-text-color;
+  display: flex;
+  height: $header-height;
+  justify-content: space-between;
+  padding: $bars-padding;
+  width: 100%;
+}
+
+.leftColumn {
+  align-items: center;
+  display: flex;
+  gap: $bars-padding;
+
+  & svg {
+    height: calc($header-height - 2rem);
+    width: 10rem;
+  }
+}
+
+.rightColumn {
+  align-items: center;
+  display: flex;
+  gap: $bars-padding;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+
+  @extend %header;
+}
+
+.iconButtonSection {
+  display: flex;
+  gap: $bars-padding;
+}
+
+.iconButton {
+  height: $icon-size;
+  width: $icon-size;
+
+  & svg {
+    height: 70%;
+    width: 70%;
+  }
+}

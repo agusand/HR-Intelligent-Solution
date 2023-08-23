@@ -1,0 +1,39 @@
+@import "styles/shared/typographies.scss";
+
+.barContainer {
+  align-items: center;
+  display: flex;
+  min-width: 20%;
+  position: relative;
+}
+
+.input {
+  padding: 1rem;
+  padding-right: 4rem;
+  width: 100%;
+
+  @extend %info-text;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.checkboxContainer {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+
+  @extend %info-text;
+}

@@ -1,0 +1,50 @@
+@import "styles/shared/typographies.scss";
+@import "styles/utils/variables.scss";
+
+.link {
+  &:visited,
+  &:link {
+    text-decoration: none;
+  }
+}
+
+.listItem {
+  background-color: $secondary-component-color;
+  border: 1px solid $tertiary-component-color;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 2rem;
+
+  &--active {
+    background-color: $tertiary-component-color;
+  }
+}
+
+.text {
+  @extend %position-item;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar {
+  border: 1px solid darkgray;
+  height: 2rem;
+  width: 10rem;
+}
+
+.barFill {
+  background-color: $tertiary-component-color;
+  height: 100%;
+
+  &--alert {
+    background-color: $main-component-color;
+  }
+}
+
+.postulantsContainer {
+  display: flex;
+  gap: 2rem;
+}

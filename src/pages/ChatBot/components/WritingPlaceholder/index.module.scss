@@ -1,0 +1,36 @@
+@import "styles/utils/variables";
+
+.dotsContainer {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.dot {
+  animation: dotAnimation 1s ease infinite;
+  background-color: $main-text-color;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+
+  &--second {
+    animation-delay: 0.2s;
+  }
+
+  &--third {
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes dotAnimation {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
